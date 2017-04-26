@@ -11,7 +11,7 @@ class CreateBaseTables < ActiveRecord::Migration
 
     create_table :posts do |t|
       t.references :user
-      t.string :photo_url
+      t.string :photo_urluser
       t.timestamps
     end
 
