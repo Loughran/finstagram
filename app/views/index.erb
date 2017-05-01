@@ -1,6 +1,7 @@
+
 <% if current_user %>
   <div class="new-post">
-    <a href="/posts/new" class="button">New Post</a>
+    <a href="/posts/new" class="button">New Post <%= Post.where(user_id: current_user).count + 1 %></a>
   </div>
 <% end %>
 

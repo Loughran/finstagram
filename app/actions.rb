@@ -64,6 +64,11 @@ post '/signup' do
   
 end
 
+before '/post/new' do
+ redirect 'login' if logged_in?
+end
+
+
 get '/posts/new' do
  @post = Post.new
  erb(:"posts/new")
