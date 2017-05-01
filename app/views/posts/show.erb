@@ -1,0 +1,10 @@
+<% if current_user %>
+  <% if current_user.id == @post.user_id %>
+    <div class="new-post">
+      <a href="/posts/new" class="button">New Post</a>
+    </div>
+  <% end %>
+<% end %>
+
+<%= erb(:'shared/post', { locals: {post: @post, allow_new_comment: true }}) %>
+  
