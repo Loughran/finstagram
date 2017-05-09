@@ -33,6 +33,7 @@ header {
 
 header > .login-info {
   margin-left: auto;
+  padding: 10px;
 }
 
 main {
@@ -58,6 +59,7 @@ main {
   background-color: white;
   border: solid 1px #244751;
   display: inline-block;
+  border-radius: 5px;
 }
 
 .post > * {
