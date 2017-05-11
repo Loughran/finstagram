@@ -1,5 +1,6 @@
 $(document).ready(function() {
  $('#photo_url').on("blur", function(event) {
+ $('#preview').hide(); 
   //get photo url from field
   var photo_url = $(this).val();
   var preview = $('#preview');
