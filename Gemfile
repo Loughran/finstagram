@@ -14,8 +14,9 @@ gem 'tux'
 group :development, :test do
   gem 'pry'
   gem 'shotgun'
+  gem 'sqlite3'
 end
 
 group :production do
-  gem 'sqlite3'
+  gem 'pg',   '0.18.4'
 end
