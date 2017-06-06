@@ -10,7 +10,7 @@ require 'sinatra/contrib/all' # Requires cookies, among other things
 
 require 'pry'
 
-APP_ROOT = Pathname.new(File.expand_path('../../', 'database'))
+APP_ROOT = Pathname.new(File.expand_path('../../', 'database')).to_s
 APP_NAME = APP_ROOT.basename.to_s
 
 # Sinatra configuration
